@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+// Írj egy függvény kifejezést, ami a paraméterként megadott tömbből eltávolítja a duplikált elemeket! A függvény visszatérési értéke a duplikált elemektől mentes új tömb!
+
+const array1 = [1, 2, 3, 3, 4, 5, 5, 'cat', 'cat'];
+const setArray = new Set(array1);
+
+const newArray = (arr) => Array.from(new Set(arr));
+
+console.log(newArray(array1));
+        
+
+    </script>
+</body>
+</html>
